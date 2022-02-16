@@ -1,0 +1,21 @@
+// Place all the styles related to the task controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+// $green: #198754;
+.btn a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 2vh;
+  border-radius: 2px;
+  background-color: rgb(106, 106, 253);
+  color: white;
+  margin: 15%;
+}
+
+.btn a:hover{
+  padding: 3vh;
+  color: aliceblue;
+  background-color: rgb(167, 167, 250);
+  transition: 0.5s;
+}

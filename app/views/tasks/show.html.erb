@@ -1,0 +1,23 @@
+<div class="d-flex justify-content-center">
+  <h2>
+    <%= @task.title %>
+  </h2>
+</div>
+
+<div class="d-flex justify-content-center btn ">
+  <%= link_to 'Back', tasks_path %>
+
+
+  <%= link_to "DESTROY YOUR F**K #{@task.title}",
+      task_path(@task),
+      method: :delete,
+      data: {confirm: "You are sure?"} %>
+      <br><br><br>
+</div>
+
+<div class="content">
+  <p><%= @task.details %></p>
+  <p><i class="fa-solid fa-square-check"></i><%= @task.completed %></p>
+</div>
+<br><br><br><br>
+<%= link_to 'Edit', edit_task_path(@task) %>
